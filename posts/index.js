@@ -15,7 +15,7 @@ app.get("/posts", (req, res) => {
 
 app.post("/posts", async (req, res) => {
   try {
-    const id = randomBytes(4).toString("hex");
+    const id = randomBytes(4).toString("hex"); 
     const { title } = req.body;
     posts[id] = {
       id,
